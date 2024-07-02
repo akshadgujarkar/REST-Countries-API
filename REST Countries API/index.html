@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Api Flag Countries</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <h2 class="title">Where in the World?</h2>
+            <p id="button">Dark Mode</p>
+        </div>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter country to search">
+            <select name="Region" id="region" style="overflow: hidden;">
+                <option value="null" disabled selected>Filter by Region</option>
+                <option value="africa">Africa</option>
+                <option value="americas"><a href="">America</a></option>
+                <option value="asia"><a href="">Asia</a></option>
+                <option value="europe"><a href="">Europe</a></option>
+                <option value="oceania"><a href="">Oceania</a></option>
+            </select>
+        </div>
+
+        <div class="countries-container">
+            <!-- <a href="#" class="country-card">
+                <img src="https://flagcdn.com/wf.svg" alt="flag">
+                <div class="card-text">
+                    <h3 class="card-title">iceland</h3>
+                    <p><b>Population: </b>81,5242</p>
+                    <p><b>Region: </b>Europe</p>
+                    <p><b>Capital: </b>Berlin</p>
+                </div>
+
+            </a> -->
+
+        </div>
+        <div class="error">
+            <strong><b>404 Country not found</b></strong>
+        </div>
+    </main>
+</body>
+
+</html>

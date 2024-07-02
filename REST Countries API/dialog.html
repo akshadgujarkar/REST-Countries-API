@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Region Country</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="country.css">
+    <style>
+        input{
+            display: none;
+
+        }
+        .search-bar{
+            justify-content: space-between;
+        }
+        .back-button{
+    padding: 3px 25px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    /* background-color: rgb(31, 44, 53); */
+    border-radius: 4px;
+    color: black;
+}
+.material-symbols-outlined{
+    position: relative;
+    top: 6.5px;
+}
+
+
+@media (max-width:755px) {
+  
+    .back-button {
+        padding: 8px 20px;
+        font-size: 0.6rem;
+        text-align: center;
+        font-size: 1rem;
+        
+    }
+ 
+    .material-symbols-outlined{
+     display: none;
+    
+   }
+}
+
+
+    </style>
+    <script src="dialog.js" type="module"></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <h2 class="title">Where in the World?</h2>
+           
+        </div>
+    </header>
+    <main>
+        <div class="search-bar">
+            <a href="/index.html" class="back-button"> <span class="material-symbols-outlined">
+                keyboard_backspace
+                 </span> Back</a>
+            <select name="Region" id="region" style="overflow: hidden;">
+                <option value="null" disabled>Filter by Region</option>
+                <option value="africas">Africas</option>
+                <option value="americas">America</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="oceania">Oceania</option>
+            </select>
+        </div>
+        <div class="countries-container">
+            <!-- <a href="#" class="country-card">
+                <img src="https://flagcdn.com/wf.svg" alt="flag">
+                <div class="card-text">
+                    <h3 class="card-title">iceland</h3>
+                    <p><b>Population: </b>81,5242</p>
+                    <p><b>Region: </b>Europe</p>
+                    <p><b>Capital: </b>Berlin</p>
+                </div>
+
+            </a> -->
+
+        </div>
+
+</body>
+
+</html>
